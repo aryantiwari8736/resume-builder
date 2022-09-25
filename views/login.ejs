@@ -10,7 +10,9 @@
     <title>Document</title>
 </head>
 <body style="background: aliceblue ">
-    <h1>Login</h1>
+    <div class="backimg">
+    <img class="backimg" src="/img/back.png"  >
+        </div>
     <div class="bg-blue   " >
     <form action="/users/create_session" method="POST">
  <!-- <label class="formcss fw-semibold " >Email</label> -->
@@ -24,6 +26,8 @@ flex-direction: column;
 gap: 2rem;">
 <div class="">
     <p class="ptag " >Already a user ? Signin</p>
+    <p style="position: relative;
+    bottom: 0.7rem;" class=""> User needs to be registered for creating resumes !  </p>
 
     </div>
 <label class="formcss fw-semibold " >Email</label>
@@ -32,7 +36,9 @@ gap: 2rem;">
 <input type="password"  class="form-control"  name="password" id="" required placeholder="password"/>
 
 
-<input type="submit"  value="Sign In">
+<input type="submit"  class="btn btn-primary " value="Sign In">
+<p href="" class="" class="">New user ? <a href="">Signup</a> </link> 
+
     </form>
 </div>
 </body>
