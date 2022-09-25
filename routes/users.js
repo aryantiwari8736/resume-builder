@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport')
 const usersController = require('../controllers/users_controller');
-router.get("/resume",usersController.resume);
+router.get("/resume",passport.checkAuthentication,usersController.resume);
 router.post('/createmydata',usersController.resume_data);
 router.get('/show_resume',usersController.show_resume);
 router.get('/signup',usersController.signup);

@@ -12,8 +12,6 @@ const resumeSchema = new mongoose.Schema({
     }
 
 },
-{
-    timestamps:true
-});
+);
 const Resume = mongoose.model('Resume',resumeSchema); // here first parameter is a collection name 
 module.exports = Resume;
