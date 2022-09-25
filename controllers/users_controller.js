@@ -1,3 +1,4 @@
+// const alert=require('alert');
 const User = require('../models/User')
 const Resume = require('../models/Resume');
 
@@ -14,6 +15,10 @@ module.exports.signup=function(req,res){
   //get the signup data 
   module.exports.create = function(req,res){
     if(req.body.password != req.body.confirm_password){
+      // alert('howdy');
+
+        res.send('USER NOT REGISTERED AS PASSWORD DID NOT EQUALS CONFIRM PASSWORD');
+
      return res.redirect('back');
     }
     User.findOne({email:req.body.email},function(err,user){
