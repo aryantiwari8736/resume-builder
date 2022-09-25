@@ -40,3 +40,10 @@
    
 }
   
+.ptag{
+    position: relative;
+    top: 4rem;
+    font-size:20px;
+    color:black;
+
+}
