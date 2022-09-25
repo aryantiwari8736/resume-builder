@@ -67,7 +67,7 @@ flex-direction: column;
     /* margin-top:4rem; */
 }
 .hscreen {
-    height:200rem;
+    height:90rem;
 }
 .templatecss {
     margin-left:4rem;
@@ -81,22 +81,15 @@ flex-direction: column;
 .textresume {
 
 }
+.bgblue{
+  background: aliceblue;
+}
+.bgourg{
+  background: black;
+  color:white;
+}
 
 
-
-/* pageeeeee
- */
-
- /**
-* Template Name: FlexStart - v1.11.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
 }
@@ -622,4 +615,35 @@ section {
   .hero .hero-img img {
     width: 100%;
   }
+}
+.mobileview{
+  display:inline-block;
+}
+@media (min-width: 983px) {
+  .mobileview {
+    display:none;
+
+  
+  }
+}
+
+
+//template 
+.bg-red{
+  background:black;
+}
+.bg-orange {
+  background:orange;
+}
+.bg-blue {
+  background:blue;
+}
+.bg-green{
+  background:green;
+}
+.bg-blueviolet {
+  background:blueviolet;
+}
+.letter-spacingour{
+letter-spacing:0.05rem;
 }

@@ -14,6 +14,85 @@
     <title>Document</title>
 </head>
 <body>
+    <p class="font-poppins text-center" style="letter-spacing: 0.1rem ">Choose color  </p>
+
+    <div class="container d-flex justify-content-center " style="gap:0.8rem">
+        <input type="button" class="border-0" id="btn" value="" style="background: red">
+        <input type="button" class="bg-orange border-0" id="btn2" value="">
+        <input type="button" class="bg-blue border-0"  id="btn3" value="">
+        <input type="button" class="bg-green border-0"  id="btn4" value="">
+        <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
+    </div>
+    
+    
+        <script>
+    let color=['red', 'orange' , 'blue' , 'green','blueviolet'];
+    let btn=document.getElementById('btn');
+    //for red
+    btn.addEventListener('click' , function (){
+        let red=color[0];
+        document.getElementById("tag1").style.background=red;
+         document.getElementById("tag2").style.background=red;
+         document.getElementById("tag3").style.background=red;
+         document.getElementById("tag4").style.background=red;
+         document.getElementById("tag5").style.background=red;
+         document.getElementById("tag6").style.background=red; 
+    })
+    //for orange
+    let btn2=document.getElementById('btn2');
+    btn2.addEventListener('click' , function (){
+        let orange=color[1];
+        document.getElementById("tag1").style.background=orange;
+         document.getElementById("tag2").style.background=orange;
+         document.getElementById("tag3").style.background=orange;
+         document.getElementById("tag4").style.background=orange;
+         document.getElementById("tag5").style.background=orange;
+         document.getElementById("tag6").style.background=orange;
+    
+    })
+    
+    //blue
+    let btn3=document.getElementById('btn3');
+    btn3.addEventListener('click' , function (){
+        let blue=color[2];
+         document.getElementById("tag1").style.background=blue;
+         document.getElementById("tag2").style.background=blue;
+         document.getElementById("tag3").style.background=blue;
+         document.getElementById("tag4").style.background=blue;
+         document.getElementById("tag5").style.background=blue;
+         document.getElementById("tag6").style.background=blue;
+    
+    
+    })
+    //green
+    
+    let btn4=document.getElementById('btn4');
+    btn4.addEventListener('click' , function (){
+        let green=color[3];
+        document.getElementById("tag1").style.background=green;
+         document.getElementById("tag2").style.background=green;
+         document.getElementById("tag3").style.background=green;
+         document.getElementById("tag4").style.background=green;
+         document.getElementById("tag5").style.background=green;
+         document.getElementById("tag6").style.background=green;
+    })
+    //gray 
+    
+    let btn5=document.getElementById('btn5');
+    btn5.addEventListener('click' , function (){
+        let gray =color[4];
+        document.getElementById("tag1").style.background=gray;
+         document.getElementById("tag2").style.background=gray;
+         document.getElementById("tag3").style.background=gray;
+         document.getElementById("tag4").style.background=gray;
+         document.getElementById("tag5").style.background=gray;
+         document.getElementById("tag6").style.background=gray;
+    
+    
+    })
+        </script>
+
+
     <div class="bg-black hscreen ">
     <div class="  font-poppins">
 
@@ -33,27 +112,28 @@
      
             </div> <%} %>
             <% for (let  i of user_res){%>  
-            <div class="container">
-                <p class="fw-bold pt-2">About me</p>
+            <div class="container ">
+                <p class="fw-bold pt-2 bgourg" id="tag1">About me</p>
                 <p class="text-justify"><%= i.about %></p>
                 
              </div>
              <%}%> 
-             <p class="fw-bold pt-2">Education</p>
+             <div class="container">
+             <p class="fw-bold pt-2 bgourg " id="tag2" >Education</p>
             <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
-            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="font-gray  fw-bold" May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
 
-            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
-
+        </div>
            <!-- 3rd  -->
 
            <div class="container">
-            <p class="fw-bold pt-2">Internships</p>
+            <p class="fw-bold pt-2 bgourg " id="tag3"  >Internships</p>
             <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             
             
@@ -63,7 +143,7 @@
 
          <!-- projects -->
          <div class="container">
-         <p class="fw-bold pt-2">Projects</p>
+         <p class="fw-bold pt-2 bgourg " id="tag4">Projects</p>
          <li>MERN STACK APP</li>
          <li>C++ MANAGEMNET SYSTEM</li>
          <li>HEALTCARE SYSTEM</li>
@@ -71,10 +151,16 @@
 
         <!-- achievement -->
         <div class="container">
-            <p class="fw-bold pt-2">Achievments</p>
+            <p class="fw-bold bgourg pt-2" id="tag5">Achievments</p>
             <li>Hackathon winner 2021</li>
             <li>Endeavour Host</li>
             <li>hult prize</li>
+           </div> 
+           <div class="container">
+            <p class="fw-bold pt-2 bgourg" id="tag6" >Skills</p>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
            </div> 
         </div>
         </div>

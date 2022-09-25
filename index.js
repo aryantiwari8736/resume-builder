@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser')
 const app = express();
 const port = 8000;
 
+
 //connecting database
 const connectToMongo = require('./config/db');
 connectToMongo();
