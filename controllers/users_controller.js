@@ -82,7 +82,7 @@ return res.redirect('back');
 
  module.exports.show_resume = function(req,res){
   console.log(req.params.id);
-  Resume.findOne({name:"Aryan"},function(err,user_resume){
+  Resume.find({},function(err,user_resume){
     if(err){
       console.log(`here is error ${err}`)
       return;
