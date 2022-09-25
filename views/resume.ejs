@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/resume.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div>
+        <div class='d-flex   bg-resume '>
+            <div class=' button-class d-none  px-4 card height-maxcontent  mx-4 '>
+                <p class='pt-4 fw-bold font-poppins'>Resume Details</p>
+                <div class='d-flex mt-6 '>
+                    <img src="https://www.svgrepo.com/show/104865/written-letter.svg" class='sidebar-image mt-3' />
+                    <ul>
+                        <li class='fw-bold list-style font-poppins pt-2rem '>Basic Details</li>
+                    </ul>
+
+                </div>
+                <div class='d-flex  '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold list-style   pt-2rem font-poppins'>Education</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Primary Skills</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style  font-poppins'>Secondry Skills</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Tools</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Languages</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Internships</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Projects</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold  pt-2rem list-style font-poppins'>Achivements</li>
+                    </ul>
+                </div>
+                <div class='d-flex '>
+                    <img src='https://www.svgrepo.com/show/104865/written-letter.svg' class='sidebar-image mt-3' />
+
+                    <ul>
+                        <li class='fw-bold pt-2rem list-style font-poppins '>Online Trainings</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class=''>
+
+                <div class='d-flex'>
+                    <p class='container fs-1'>Resume</p>
+                    <img src='' class='' />
+
+                </div>
+                <div class='container card '>
+
+                    <p class='text-left font-poppins py-3 fw-bold fs-resumehead
+            '>Personal Details</p>
+
+                    <form class="row g-3 " action="/users/createmydata" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+
+
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">First Name</label>
+                                <input type="text" required class="form-control" id="inputName" placeholder="First Name"
+                                    name="name" />
+                            </div>
+                            <div class="col-md-6">
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold">Last Name</label>
+                                <input type="text" class="form-control" id="inputName2" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class='col-12'>
+                            <label htmlFor="inputEmail4" class="form-label font-poppins fw-bold">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" name="email" />
+
+                        </div>
+                        <div class='col-12'>
+                            <label htmlFor="inputcontact" class="form-label font-poppins fw-bold">Contact</label>
+                            <input type="contact" class="form-control" id="contact" />
+                        </div>
+                        <div class='col-12'>
+                            <label htmlFor="inputcontact" class="form-label  font-poppins fw-bold">LinkedIn
+                                Profile</label>
+                            <input type="link" class="form-control" id="linkedinProfile" />
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="exampleFormControlTextarea1" class="form-label font-poppins  fw-bold">About Me</label>
+                            <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="about" ></textarea>
+                        </div>
+                        <input type="submit" value="submit now">
+                    </form>
+                        
+ <a href="/users/show_resume/"><input type="submit" value="show"></a>  
+
+
+                </div>
+                <div class='container card my-5  '>
+                    <p class='text-left font-poppins py-3 fs-resumehead fw-bold 
+        '>Graduation/Degree</p>
+
+                    <form class="row g-3 ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">College Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6">
+
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold">University</label>
+                                <input type="text" class="form-control" id="inputName2" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Course</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6">
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold ">Department</label>
+                                <input type="text" class="form-control" id="inputName2" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-md-6">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Start Date</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">End Date</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 py-2">
+                                <label htmlFor="inputName"
+                                    class="form-label  font-poppins fw-bold">Percentage/CGPA</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Percentage/CGPA" />
+                            </div>
+                            <div class="col-md-6 py-2">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Maximum
+                                    Percentage?CGPA</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Max CGPA" />
+                            </div>
+
+                        </div>
+
+                        <div class='col-12 py-2'>
+                            <label htmlFor="inputcontact" class="form-label font-poppins fw-bold">Current Year</label>
+                            <input type="contact" class="form-control" id="contact" />
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class='container card my-5 '>
+
+                    <p class='text-left font-poppins py-3 fw-bold fs-resumehead
+    '>Primary Skills</p>
+
+                    <form class="row g-3 ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select margin-2rem " aria-label="Default select example">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="row  ">
+                        <div class="row">
+                            <div class="col-md-6 padding  ">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6  ">
+                                <select class="form-select margin-2rem " aria-label="Default select example">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                    <form class="row  ">
+                        <div class="row">
+                            <div class="col-md-6 paddingbottom-1rem">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6  ">
+                                <select class="form-select margin-2rem " aria-label="Default select example">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <div class='container card my-5'>
+                    <form class="row  ">
+                        <div class="row">
+                            <div class="col-md-6 paddingbottom-1rem">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Secondry
+                                    Skills</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6  ">
+                                <select class="form-select margin-2rem " aria-label="Default select example">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class='d-flex py-4 justify-content-center'>
+                        <button type="button" class="btn btn-primary col-lg-2   ">Add <span
+                                class='fw-bold '>+</span></button>
+                    </div>
+                </div>
+
+                <div class='container card my-5'>
+                    <form class="row  ">
+                        <div class="row">
+                            <div class="col-md-6 paddingbottom-1rem">
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Tools</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                            </div>
+                            <div class="col-md-6  ">
+                                <select class="form-select margin-2rem " aria-label="Default select example">
+                                    <option value="1">Beginner</option>
+                                    <option value="2">Intermediate</option>
+                                    <option value="3">Pro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class='d-flex py-4 justify-content-center'>
+                        <button type="button" class="btn btn-primary col-lg-2   ">Add <span
+                                class='fw-bold '>+</span></button>
+                    </div>
+                </div>
+
+                <div class='container card my-5'>
+                    <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Internships</label>
+
+                    <div class='d-flex py-4 justify-content-center'>
+                        <button type="button" class="btn btn-primary col-lg-2   ">Add <span
+                                class='fw-bold '>+</span></button>
+                    </div>
+                </div>
+
+                <div class='container card my-5'>
+                    <div class="col-md-12">
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 1</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                    </div>
+                    <div class="col-md-12">
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 2</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                    </div>
+                    <div class="col-md-12">
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 3</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                    </div>
+
+                    <div class='d-flex py-4 justify-content-center'>
+                        <button type="button" class="btn btn-primary col-lg-2   ">Add <span
+                                class='fw-bold '>+</span></button>
+                    </div>
+                </div>
+
+
+                <div class='container card my-5'>
+                    <div class="col-md-12">
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Achivements</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="" />
+                    </div>
+
+                    <div class='d-flex py-4 justify-content-center'>
+                        <button type="button" class="btn btn-primary col-lg-2   ">Add <span
+                                class='fw-bold '>+</span></button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+</body>
+
+</html>
