@@ -5,9 +5,15 @@ module.exports.resume= function(req,res){
     return res.render('resume');
 }
 module.exports.signup=function(req,res){
-    return  res.render('signup');
+  if(req.isAuthenticated()){
+   
+    return res.redirect('/home');
+ }
+ return  res.render('signup');
   }
   module.exports.login=function(req,res){
+    if(req.isAuthenticated()){
+    return res.render('/home') }
     return  res.render('login');
   }
 
@@ -71,7 +77,7 @@ module.exports.signup=function(req,res){
 //   }
 
  module.exports.create_session = function(req,res){
-return res.redirect('/');
+return res.redirect('/home');
  }
 
 
