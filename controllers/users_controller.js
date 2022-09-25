@@ -1,6 +1,6 @@
 const User = require('../models/User')
 const Resume = require('../models/Resume');
-const { findById } = require('../models/Resume');
+
 module.exports.resume= function(req,res){
     return res.render('resume');
 }
@@ -31,40 +31,51 @@ module.exports.signup=function(req,res){
         })
       }
      else{
-      res.redirect('back');
+      return res.redirect('back');
      }
     })
   }
-  // user login  and creating a session
-  module.exports.create_session = function(req,res){
-   //find the user -
-User.findOne({email:req.body.email},function(err,user){
-  if(err){
-    console.log(err);
-    return;
-  }
-//hndle user found - 
-if(user){
-//handle password which does not match
-if (user.password != req.body.password) {
-  return res.redirect('/users/signup')
-}
 
-// handle create-session
-res.cookie('user_id',user.id);  
-return res.redirect('/users/profile');
-}
-   // handle user not found  -
-else{
-return res.redirect('back');
-}
 
-})
+
+
+//   // user login  and creating a session
+//   module.exports.create_session = function(req,res){
+//    //find the user -
+// User.findOne({email:req.body.email},function(err,user){
+//   if(err){
+//     console.log(err);
+//     return;
+//   }
+// //hndle user found - 
+// if(user){
+// //handle password which does not match
+// if (user.password != req.body.password) {
+//   return res.redirect('/users/signup')
+// }
+
+// // handle create-session
+// res.cookie('user_id',user.id);  
+// return res.redirect('/users/profile');
+// }
+//    // handle user not found  -
+// else{
+// return res.redirect('back');
+// }
+
+// })
 
    
 
  
-  }
+//   }
+
+ module.exports.create_session = function(req,res){
+return res.redirect('/');
+ }
+
+
+
 
   //saving data on mongo -
  module.exports.resume_data =  function(req,res){
