@@ -118,5 +118,11 @@ return res.redirect('/home');
     
   
       
-      
-        
+ module.exports.destroySession = function(req, res, next) {
+  req.logout(function(err) {
+    if (err) { return next(err); }
+    req.flash('message', 'YourMessageHere')
+    res.redirect('/home');
+
+  });
+}     
