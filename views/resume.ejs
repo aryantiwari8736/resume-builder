@@ -14,20 +14,21 @@
 
 </head>
 
-<body style="background:aliceblue; ">
+<body style="background:aliceblue;
+color: blueviolet; ">
     <div>
         <div class='  cursive  bg-resume  '>
 
             <div class='fs-semibold' style="letter-spacing: 0.05rem">
 
                 <div class='d-flex container'>
-                    <p class='container fs-1'>Resume</p>
+                    <p class='container text-center fs-1'>Resume</p>
                     <img src='' class='' />
 
                 </div>
                 <div class='container card '>
 
-                    <p class='text-left font-poppins py-3 fw-bold fs-resumehead
+                    <p class='text-left font-poppins py-3 fw-semibold fs-resumehead
             '>Personal Details</p>
 
                     <form class="row g-3 " action="/users/createmydata" method="POST">
@@ -35,31 +36,31 @@
                             <div class="col-md-6">
 
 
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">First Name</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">First Name</label>
                                 <input type="text" required class="form-control" id="inputName" placeholder="First Name"
                                     name="name" />
                             </div>
                             <div class="col-md-6">
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold">Last Name</label>
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold">Last Name</label>
                                 <input type="text" class="form-control" id="inputName2" placeholder="Last Name" />
                             </div>
                         </div>
                         <div class='col-12'>
-                            <label htmlFor="inputEmail4" class="form-label font-poppins fw-bold">Email</label>
+                            <label htmlFor="inputEmail4" class="form-label font-poppins fw-semibold">Email</label>
                             <input type="email" class="form-control" id="inputEmail4" name="email" />
 
                         </div>
                         <div class='col-12'>
-                            <label htmlFor="inputcontact" class="form-label font-poppins fw-bold">Contact</label>
+                            <label htmlFor="inputcontact" class="form-label font-poppins fw-semibold">Contact</label>
                             <input type="contact" class="form-control" id="contact" />
                         </div>
                         <div class='col-12'>
-                            <label htmlFor="inputcontact" class="form-label  font-poppins fw-bold">LinkedIn
+                            <label htmlFor="inputcontact" class="form-label  font-poppins fw-semibold">LinkedIn
                                 Profile</label>
                             <input type="link" class="form-control" id="linkedinProfile" />
                         </div>
                         <div class="mb-3">
-                            <label htmlFor="exampleFormControlTextarea1" class="form-label font-poppins  fw-bold">About Me</label>
+                            <label htmlFor="exampleFormControlTextarea1" class="form-label font-poppins  fw-semibold">About Me</label>
                             <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="about" ></textarea>
                         </div>
                         <input type="submit" class="btn btn-primary" value="submit now">
@@ -68,38 +69,38 @@
                     <a class="btn bg-" href="/users/show_resume/"><input type="submit" value="Show Resume"></a>  
                 </div>
                 <div class='container card my-5  '>
-                    <p class='text-left font-poppins py-3 fs-resumehead fw-bold 
+                    <p class='text-left font-poppins py-3 fs-resumehead fw-semibold 
         '>Graduation/Degree</p>
 
                     <form class="row g-3 ">
                         <div class="row">
                             <div class="col-md-6">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">College Name</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">College Name</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6">
 
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold">University</label>
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold">University</label>
                                 <input type="text" class="form-control" id="inputName2" placeholder="" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Course</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Course</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6">
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-bold ">Department</label>
+                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold ">Department</label>
                                 <input type="text" class="form-control" id="inputName2" placeholder="" />
                             </div>
                         </div>
                         <div class="row py-2">
                             <div class="col-md-6">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Start Date</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Start Date</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
                             </div>
                             <div class="col-md-6 py-2">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">End Date</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">End Date</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
                             </div>
 
@@ -107,11 +108,11 @@
                         <div class="row">
                             <div class="col-md-6 py-2">
                                 <label htmlFor="inputName"
-                                    class="form-label  font-poppins fw-bold">Percentage/CGPA</label>
+                                    class="form-label  font-poppins fw-semibold">Percentage/CGPA</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="Percentage/CGPA" />
                             </div>
                             <div class="col-md-6 py-2">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Maximum
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Maximum
                                     Percentage?CGPA</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="Max CGPA" />
                             </div>
@@ -119,7 +120,7 @@
                         </div>
 
                         <div class='col-12 py-2'>
-                            <label htmlFor="inputcontact" class="form-label font-poppins fw-bold">Current Year</label>
+                            <label htmlFor="inputcontact" class="form-label font-poppins fw-semibold">Current Year</label>
                             <input type="contact" class="form-control" id="contact" />
 
                         </div>
@@ -128,13 +129,13 @@
                 </div>
                 <div class='container card my-5 '>
 
-                    <p class='text-left font-poppins py-3 fw-bold fs-resumehead
+                    <p class='text-left font-poppins py-3 fw-semibold fs-resumehead
     '>Primary Skills</p>
 
                     <form class="row g-3 ">
                         <div class="row">
                             <div class="col-md-6">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Skills</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6">
@@ -149,7 +150,7 @@
                     <form class="row  ">
                         <div class="row">
                             <div class="col-md-6 padding  ">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Skills</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6  ">
@@ -165,7 +166,7 @@
                     <form class="row  ">
                         <div class="row">
                             <div class="col-md-6 paddingbottom-1rem">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Skills</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Skills</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6  ">
@@ -185,7 +186,7 @@
                     <form class="row  ">
                         <div class="row">
                             <div class="col-md-6 paddingbottom-1rem">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Secondry
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Secondry
                                     Skills</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
@@ -201,7 +202,7 @@
                     </form>
                     <div class='d-flex py-4 justify-content-center'>
                         <button type="button" class="btn btn-primary col-lg-2   ">Add <span
-                                class='fw-bold '>+</span></button>
+                                class='fw-semibold '>+</span></button>
                     </div>
                 </div>
 
@@ -209,7 +210,7 @@
                     <form class="row  ">
                         <div class="row">
                             <div class="col-md-6 paddingbottom-1rem">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Tools</label>
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Tools</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="" />
                             </div>
                             <div class="col-md-6  ">
@@ -224,49 +225,49 @@
                     </form>
                     <div class='d-flex py-4 justify-content-center'>
                         <button type="button" class="btn btn-primary col-lg-2   ">Add <span
-                                class='fw-bold '>+</span></button>
+                                class='fw-semibold '>+</span></button>
                     </div>
                 </div>
 
                 <div class='container card my-5'>
-                    <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Internships</label>
+                    <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Internships</label>
 
                     <div class='d-flex py-4 justify-content-center'>
                         <button type="button" class="btn btn-primary col-lg-2   ">Add <span
-                                class='fw-bold '>+</span></button>
+                                class='fw-semibold '>+</span></button>
                     </div>
                 </div>
 
                 <div class='container card my-5'>
                     <div class="col-md-12">
-                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 1</label>
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Project 1</label>
                         <input type="text" class="form-control" id="inputName" placeholder="" />
                     </div>
                     <div class="col-md-12">
-                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 2</label>
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Project 2</label>
                         <input type="text" class="form-control" id="inputName" placeholder="" />
                     </div>
                     <div class="col-md-12">
-                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Project 3</label>
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Project 3</label>
                         <input type="text" class="form-control" id="inputName" placeholder="" />
                     </div>
 
                     <div class='d-flex py-4 justify-content-center'>
                         <button type="button" class="btn btn-primary col-lg-2   ">Add <span
-                                class='fw-bold '>+</span></button>
+                                class='fw-semibold '>+</span></button>
                     </div>
                       </div>
 
 
                     <div class='container card my-5'>
                     <div class="col-md-12">
-                        <label htmlFor="inputName" class="form-label  font-poppins fw-bold">Achivements</label>
+                        <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Achivements</label>
                         <input type="text" class="form-control" id="inputName" placeholder="" />
                     </div>
 
                     <div class='d-flex py-4 justify-content-center'>
                     <button type="button" class="btn btn-primary col-lg-2   ">Add <span
-                      class='fw-bold '>+</span></button>
+                      class='fw-semibold '>+</span></button>
                     </div>
                 </div>
 

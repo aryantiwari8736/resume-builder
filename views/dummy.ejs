@@ -4,47 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/myresume.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <!-- <script src="script.js"></script>  -->
+    <script src="pdf.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="/assets/js/color.js"></script>  -->
- 
+
+
+
+
 
     <title>Document</title>
 </head>
-<body style="background:lavender">
+<body>
+
     <p class="font-poppins text-center" style="letter-spacing: 0.1rem ">Choose color  </p>
-
     <div class="container d-flex justify-content-center " style="gap:0.8rem">
-        <input type="button" class="border-0" id="btn" value="" style="background: red">
-        <input type="button" class="bg-orange border-0" id="btn2" value="">
-        <input type="button" class="bg-blue border-0"  id="btn3" value="">
-        <input type="button" class="bg-green border-0"  id="btn4" value="">
-        <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
+    <input type="button" class="border-0" id="btn" value="" style="background: red">
+    <input type="button" class="bg-orange border-0" id="btn2" value="">
+    <input type="button" class="bg-blue border-0"  id="btn3" value="">
+    <input type="button" class="bg-green border-0"  id="btn4" value="">
+    <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
     </div>
-<div class="" style="display: flex;
-justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
-</div>
-<button class="btn btn-primary  justify-content-center" id="download">Download PDF File</button>
 
-    <!-- FOR COLOR CHANGING TEMPLATE  -->
-        <script>
-    
-    let color=['red', 'orange' , 'blue' , 'green','blueviolet'];
-let btn1=document.getElementById('btn');
+
+    <script>
+let color=['red', 'orange' , 'blue' , 'green','blueviolet'];
+let btn=document.getElementById('btn');
 //for red
-btn1.addEventListener('click' , function (){
+btn.addEventListener('click' , function (){
     let red=color[0];
-     console.log(red); 
-     document.getElementById("tag1").style.background=red;
+    document.getElementById("tag1").style.background=red;
+     document.getElementById("tag2").style.background=red;
      document.getElementById("tag3").style.background=red;
      document.getElementById("tag4").style.background=red;
      document.getElementById("tag5").style.background=red;
-     document.getElementById("tag6").style.background=red;
-     document.getElementById("tag2").style.background=red;
-
- 
+     document.getElementById("tag6").style.background=red; 
 })
 //for orange
 let btn2=document.getElementById('btn2');
@@ -98,82 +94,52 @@ btn5.addEventListener('click' , function (){
 
 
 })
-//download pdf JAVASCRIPT ---------------------------------------------------------------------------------------------------------------
- window.onload = function(){
-     document.getElementById("download")
-     .addEventListener("click" , ()=>{
-         const invoice=this.document.getElementById("invoice");
-        console.log(invoice);
-         var opt = {
-             margin:       0.3,
-             filename:     'myfile.pdf',
-             image:        { type: 'jpeg', quality: 0.98 },
-            //  html2canvas:  { scale:  2},
-             jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-           };
+    </script>
+   
+    <div class="letter-spacingour" id="invoice">
+    <div class="hscreen " id="">
+    <div class="  font-poppins ">
 
-         html2pdf().from(invoice).set(opt).save();
-         
-     })
- }
-
-// pdf js ends here ----------------------------------------------------------------------------------------------------------------------
-        </script>
-
-  <div class="letter-spacingour">
-    <div class=" hscreen bg-gray "  >
-    <div class="  font-poppins"  >
-
-        <div class="bg-white container " >
-        <div class="row   templatecss " id="invoice">
+        <div class="bg-white  container hscreen">
+        <div class="row  templatecss ">
             <div class=" col-6">
                 <img src="https://imgs.search.brave.com/qSsYOmcAFTOMv_Ee0tWdno16hKOkuIFSus10rQ8HzpI/rs:fit:860:857:1/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yMi0y/MjQwMDBfcHJvZmls/ZS1waWMtZHVtbXkt/cG5nLXRyYW5zcGFy/ZW50LXBuZy5wbmc" class="profimg  "/>
-       <!-- <div class="html12__page-break"></div> -->
+              
             </div>
-            <% for (let i  of user_res) {%>  
             <div class="col-6">
-                <!-- <p class="pt-2rem text-centers fs-2 fw-bold"></p> -->
-
-               
-          <p class="pt-2rem text-centers fs-2 fw-bold">  <%= i.name %></p>
+                <p class="pt-2rem text-centers fs-2 fw-bold ">Name</p>
      
-            </div> <%} %>
-            <% for (let  i of user_res){%>  
-            <div class="container ">
-                <p class="fw-bold pt-2 bgourg" id="tag1" >About me</p>
-<!-- yaha data base se aega  -->
-                <p class="text-justify"><%= i.about %></p>
-                
+            </div>
+            <div class="container">
+                <p class="fw-bold pt-2 bgourg "  id="tag1" >About me</p>
+                <p class="text-justify" style="letter-spacing: 0.07rem">Bnaknkls Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam dicta nam dolores facilis? Possimus aliquam dignissimos alias id vel? Voluptatum repudiandae neque labore quasi odit quae ea cumque officia? cajdsjasd ask dkasd asdja ,msd ma sdasjkd asdm amldsf  asmd asml dm al aslkndnjoasd assj dlam sdlasd ma sdlma sdlma smlalsd amls dmlasdma slm dals d</p>
              </div>
-             <%}%> 
              <div class="container">
-                <!-- <p class="fw-bold pt-2 bgour" >Education</p> -->
-                <p class="fw-bold pt-2 bgourg" id="tag1" >About me</p>
-                <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente obcaecati possimus, quos vel, maiores minus veritatis aperiam explicabo repellat aut harum odit officiis et deleniti ut ipsa, tenetur minima sint.</p>
+             <p class="fw-bold pt-2  bgourg  " id="tag2" >Education</p>
+            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
-             <p class="fw-bold pt-2 bgourg" id="tag2"  >Education</p>
-            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
-
-            <p class="font-gray  fw-bold" May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
 
-            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="pb-3 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
         </div>
            <!-- 3rd  -->
 
            <div class="container">
-            <p class="fw-bold pt-2 bgourg " id="tag3"  >Internships</p>
+            <p class="fw-bold pt-2 bgourg" id="tag3" >Internships</p>
             <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             
+            
+            <p class="text-justify">Bnaknkls Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam dicta nam dolores facilis? Possimus aliquam dignissimos alias id vel? Voluptatum repudiandae neque labore quasi odit quae ea cumque officia? cajdsjasd ask dkasd asdja ,msd ma sdasjkd asdm amldsf  asmd asml dm al aslkndnjoasd assj dlam sdlasd ma sdlma sdlma smlalsd amls dmlasdma slm dals d</p>
          </div> 
          
 
          <!-- projects -->
          <div class="container">
-         <p class="fw-bold pt-2 bgourg " id="tag4">Projects</p>
+         <p class="fw-bold pt-2 bgourg" id="tag4" >Projects</p>
          <li>MERN STACK APP</li>
          <li>C++ MANAGEMNET SYSTEM</li>
          <li>HEALTCARE SYSTEM</li>
@@ -181,7 +147,7 @@ btn5.addEventListener('click' , function (){
 
         <!-- achievement -->
         <div class="container">
-            <p class="fw-bold bgourg pt-2" id="tag5">Achievments</p>
+            <p class="fw-bold pt-2 bgourg" id="tag5" >Achievments</p>
             <li>Hackathon winner 2021</li>
             <li>Endeavour Host</li>
             <li>hult prize</li>
@@ -194,15 +160,16 @@ btn5.addEventListener('click' , function (){
            </div> 
         </div>
         </div>
-   
     </div>
     <div id="print-btn"></div>
+<button id="download" class="" >Download PDF File</button>
+
+<img src="https://chart.apis.google.com/chart?cht=qr&chs=250x250&chl"= http://google.com">
 
 </div>
 
 
-  </div>
- 
+</div>
 
 </body>
 </html>
