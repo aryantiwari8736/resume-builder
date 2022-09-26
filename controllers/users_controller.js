@@ -90,13 +90,13 @@ return res.redirect('/home');
 
   //saving data on mongo -
  module.exports.resume_data =  function(req,res){
-  Resume.create({name:req.body.name ,email:req.body.email,about:req.body.about},function(err,resData){
-    if(err){
+  Resume.create({name:req.body.name ,email:req.body.email,about:req.body.about,user:req.user._id},function(err,resData){
+    if(err){              
       console.log(err);
       return;
     }
     console.log('*****',resData);
-    return res.send('aryan');
+    return res.send('back');
   })
  }
 
@@ -104,7 +104,7 @@ return res.redirect('/home');
 
  module.exports.show_resume = function(req,res){
   console.log(req.params.id);
-  Resume.find({},function(err,user_resume){
+  Resume.findOne({user: req.user._id},function(err,user_resume){
     if(err){
       console.log(`here is error ${err}`)
       return;
@@ -115,7 +115,16 @@ return res.redirect('/home');
   })
 
  }
-    
+
+
+ //signout
+
+ module.exports.destroySession = function(req, res, next) {
+  req.logout(function(err) {
+    if (err) { return next(err); }
+    res.render('home');
+  });
+}
   
       
       
