@@ -2,7 +2,7 @@ const express =require('express');
 const cookieParser = require('cookie-parser')
 const app = express();
 const port = 8000;
-
+var flash = require('connect-flash');
 
 //connecting database
 const connectToMongo = require('./config/db');
@@ -19,9 +19,7 @@ app.use(express.urlencoded());
 //using cookie -- 
 app.use(cookieParser());
 app.use(express.static('assets'));
-
-
-
+app.use(flash());
 
 //setup the view engine --
 app.set('view engine','ejs');
@@ -35,11 +33,11 @@ app.use(session ({
     secret:"blahsomething", //encode decode key 
     saveUninitialized:false,
     resave:false,
-    cookie:{maxAge:(1000*60*60)},  //time how long our cookie remain valid // session time  in milisecond
+    cookie:{maxAge:(1000*60*10)},  //time how long our cookie remain valid // session time  in milisecond
     store:new MongoStore({
         
             mongoUrl:'mongodb://localhost:27017',
-            autoRemove:'disabled'
+            autoRemove:'disabled' 
         
     },function(err){
         console.log(err );
