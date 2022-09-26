@@ -13,6 +13,23 @@ const resumeSchema = new mongoose.Schema({
     about:{
         type:String
     },
+    linkedin:{
+        type:String
+    },
+    github:{
+        type:String
+    },
+    college:{
+        type:String
+    },
+    course:{
+        type:String
+    },department:{
+        type:String
+    },
+    year:{
+        type:String
+    }
 
 },{
     timestamps:true

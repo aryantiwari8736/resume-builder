@@ -23,7 +23,7 @@ color: black; ">
             <div class='fs-semibold' style="letter-spacing: 0.05rem">
 
                 <div class='d-flex container'>
-                    <p class='container text-center fs-1'>Resume</p>
+                    <p class='container text-center fs-1'>Fill Your Resume Entries </p>
                     <img src='' class='' />
 
                 </div>
@@ -37,99 +37,74 @@ color: black; ">
                             <div class="col-md-6">
 
 
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">First Name</label>
-                                <input type="text" required class="form-control" id="inputName" placeholder="First Name"
+                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold"> Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Your Name"
                                     name="name" />
                             </div>
-                            <div class="col-md-6">
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold">Last Name</label>
-                                <input type="text" class="form-control" id="inputName2" placeholder="Last Name" />
-                            </div>
+                           
                         </div>
                         <div class='col-12'>
                             <label htmlFor="inputEmail4" class="form-label font-poppins fw-semibold">Email</label>
                             <input type="email" class="form-control" id="inputEmail4" name="email" />
 
                         </div>
-                        <div class='col-12'>
-                            <label htmlFor="inputcontact" class="form-label font-poppins fw-semibold">Contact</label>
-                            <input type="contact" class="form-control" id="contact" />
-                        </div>
+                        
                         <div class='col-12'>
                             <label htmlFor="inputcontact" class="form-label  font-poppins fw-semibold">LinkedIn
                                 Profile</label>
-                            <input type="link" class="form-control" id="linkedinProfile" />
+                            <input type="link" class="form-control" id="linkedinProfile" name="linkedin" />
+                        </div>
+                        <div class='col-12'>
+                            <label htmlFor="inputcontact" class="form-label  font-poppins fw-semibold">Github Profile
+                                Profile</label>
+                            <input type="link" class="form-control" id="linkedinProfile" name="github" />
                         </div>
                         <div class="mb-3">
                             <label htmlFor="exampleFormControlTextarea1" class="form-label font-poppins  fw-semibold">About Me</label>
                             <textarea type="text" class="form-control" id="exampleFormControlTextarea1" name="about" ></textarea>
                         </div>
-                        <input type="submit" class="btn btn-primary" value="submit now">
-                    </form>
-                        
-                    <a class="btn bg-" href="/users/show_resume/"><input type="submit" value="Show Resume"></a>  
+       
                 </div>
                 <div class='container card my-5  '>
                     <p class='text-left font-poppins py-3 fs-resumehead fw-semibold 
         '>Graduation/Degree</p>
-
-                    <form class="row g-3 ">
                         <div class="row">
                             <div class="col-md-6">
                                 <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">College Name</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                <input type="text" class="form-control" id="inputName" placeholder="" name="college" />
                             </div>
-                            <div class="col-md-6">
-
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold">University</label>
-                                <input type="text" class="form-control" id="inputName2" placeholder="" />
-                                
-                                <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold">University</label>
-                                <input type="text" class="form-control" id="inputName2" placeholder="" />
-
-                            </div>
+            
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Course</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="" />
+                                <input type="text" class="form-control" id="inputName" placeholder="" name="course" />
                             </div>
                             <div class="col-md-6">
                                 <label htmlFor="inputName2" class="form-label  font-poppins fw-semibold ">Department</label>
-                                <input type="text" class="form-control" id="inputName2" placeholder="" />
+                                <input type="text" class="form-control" id="inputName2" placeholder="" name="department" />
                             </div>
                         </div>
-                        <div class="row py-2">
-                            <div class="col-md-6">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Start Date</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
-                            </div>
-                            <div class="col-md-6 py-2">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">End Date</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="DD/MM/YY" />
-                            </div>
-
-                        </div>
+            
                         <div class="row">
                             <div class="col-md-6 py-2">
                                 <label htmlFor="inputName"
                                     class="form-label  font-poppins fw-semibold">Percentage/CGPA</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Percentage/CGPA" />
+                                <input type="text" class="form-control" id="inputName" placeholder="Percentage/CGPA" name="cgpa" />
                             </div>
-                            <div class="col-md-6 py-2">
-                                <label htmlFor="inputName" class="form-label  font-poppins fw-semibold">Maximum
-                                    Percentage?CGPA</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Max CGPA" />
-                            </div>
+                           
 
                         </div>
 
                         <div class='col-12 py-2'>
                             <label htmlFor="inputcontact" class="form-label font-poppins fw-semibold">Current Year</label>
-                            <input type="contact" class="form-control" id="contact" />
+                            <input type="contact" class="form-control" id="contact" name="year"/>
 
                         </div>
-
+                        <input type="submit" class="btn btn-primary" value="submit now">
+                    
+                        
+                        <a class="btn bg-" href="/users/show_resume/"><input type="submit" value="Show Resume"></a>
                     </form>
                 </div>
 

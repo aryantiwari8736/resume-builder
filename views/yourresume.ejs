@@ -14,7 +14,10 @@
     <title>Document</title>
 </head>
 <body style="background:lavender">
-    <p class="font-poppins text-center" style="letter-spacing: 0.1rem ">Choose color  </p>
+   
+    <div class="font-poppins text-center" style="letter-spacing: 0.1rem "><div class="backimg">
+        <a href="/home"><img class="backimg" src="/img/back.png"  ></a>
+            </div>Choose color  </div>
 
     <div class="container d-flex justify-content-center " style="gap:0.8rem">
         <input type="button" class="border-0" id="btn" value="" style="background: red">
@@ -30,6 +33,7 @@ justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
 </div>
 <div class="d-flex justify-content-center py-2">
 <button class="btn btn-primary  justify-content-right" id="download">Download PDF File</button>
+
 </div>
 
 </script>
@@ -175,15 +179,15 @@ btn7.addEventListener('click' , function (){
               
 
              <p class="fw-semibold pb-1 mb-1 pt-2 bgourg" id="tag2"  >Education</p>
-            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   <%= user_res.college%></span></p> 
             <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
             <p class="font-gray  fw-bold" May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">--------</p>
 
 
             <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">-------</p>
         </div>
            <!-- 3rd  -->
 

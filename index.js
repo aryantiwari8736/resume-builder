@@ -2,6 +2,7 @@ const express =require('express');
 const cookieParser = require('cookie-parser')
 const app = express();
 const port = 8000;
+
 var flash = require('connect-flash');
 
 //connecting database
@@ -19,6 +20,7 @@ app.use(express.urlencoded());
 //using cookie -- 
 app.use(cookieParser());
 app.use(express.static('assets'));
+
 app.use(flash());
 
 //setup the view engine --
