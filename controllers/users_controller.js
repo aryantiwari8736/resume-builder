@@ -96,7 +96,7 @@ return res.redirect('/home');
       return;
     }
     console.log('*****',resData);
-    return res.send('back');
+    return res.redirect('/users/show_resume');
   })
  }
 
@@ -126,4 +126,10 @@ return res.redirect('/home');
   });
 }
   
-      
+    module.exports.update = function(req, res){
+ 
+        Resume.findByIdAndUpdate(req.params.id, req.body, function(err, user){
+            return res.redirect('/users/show_resume');
+        });
+  
+}  
