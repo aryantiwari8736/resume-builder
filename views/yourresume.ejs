@@ -120,6 +120,13 @@ btn5.addEventListener('click' , function (){
 // pdf js ends here ----------------------------------------------------------------------------------------------------------------------
         </script>
 
+   
+
+
+   
+    
+   
+
   <div class="letter-spacingour">
     <div class=" hscreen bg-gray "  >
     <div class="  font-poppins"  >
@@ -200,7 +207,11 @@ btn5.addEventListener('click' , function (){
 
 
   </div>
- 
+  <form action="/users/update/<%=user_res.id %>" method="POST">
+    <input type="text"  name="name" value="<%= user_res.name %>">
+    <input type="email"  name="email" value="<%= user_res.email %>">
+   <input type="submit" value="Edit">
+</form>
 
 </body>
 </html>
