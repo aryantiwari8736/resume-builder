@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="/assets/js/color.js"></script>  -->
- 
+ <srcipt src="qrcode.min.js"></srcipt>
 
     <title>Document</title>
 </head>
@@ -22,16 +22,26 @@
         <input type="button" class="bg-blue border-0"  id="btn3" value="">
         <input type="button" class="bg-green border-0"  id="btn4" value="">
         <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
+        <input type="button" class="bg-blueviolet border-0"  id="btn7" value="">
+
     </div>
 <div class="" style="display: flex;
 justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
 </div>
-<button class="btn btn-primary  justify-content-center" id="download">Download PDF File</button>
+<div class="d-flex justify-content-center py-2">
+<button class="btn btn-primary  justify-content-right" id="download">Download PDF File</button>
+</div>
 
+</script>
     <!-- FOR COLOR CHANGING TEMPLATE  -->
         <script>
+    // qr 
+
+
+
     
-    let color=['red', 'orange' , 'blue' , 'green','blueviolet'];
+
+    let color=['red', 'orange' , 'blue' , 'green','blueviolet' , 'black'];
 let btn1=document.getElementById('btn');
 //for red
 btn1.addEventListener('click' , function (){
@@ -94,7 +104,15 @@ btn5.addEventListener('click' , function (){
      document.getElementById("tag3").style.background=gray;
      document.getElementById("tag4").style.background=gray;
      document.getElementById("tag5").style.background=gray;
-     document.getElementById("tag6").style.background=gray;
+
+
+})
+let btn7=document.getElementById('btn7');
+btn7.addEventListener('click' , function (){
+    let gray =color[5];
+    document.getElementById("tag6").style.background=gray;
+
+
 
 
 })
@@ -121,11 +139,11 @@ btn5.addEventListener('click' , function (){
         </script>
 
   <div class="letter-spacingour">
-    <div class=" hscreen bg-gray "  >
+    <div class=" hscreen bg-gray  "  >
     <div class="  font-poppins"  >
 
         <div class="bg-white container " >
-        <div class="row   templatecss " id="invoice">
+        <div class="row   templatecss border border-dark " id="invoice">
             <div class=" col-6">
                 <img src="https://imgs.search.brave.com/qSsYOmcAFTOMv_Ee0tWdno16hKOkuIFSus10rQ8HzpI/rs:fit:860:857:1/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yMi0y/MjQwMDBfcHJvZmls/ZS1waWMtZHVtbXkt/cG5nLXRyYW5zcGFy/ZW50LXBuZy5wbmc" class="profimg  "/>
        <!-- <div class="html12__page-break"></div> -->
@@ -140,7 +158,7 @@ btn5.addEventListener('click' , function (){
             </div> 
           
             <div class="container ">
-                <p class="fw-bold pt-2 bgourg" id="tag1" >About me</p>
+                <p class="fw-semibold pt-2 bgourg pb-1 mb-1" id="tag1" >About me</p>
 <!-- yaha data base se aega  -->
                 <p class="text-justify"><%= user_res.about %></p>
                 
@@ -149,21 +167,21 @@ btn5.addEventListener('click' , function (){
              <div class="container">
               
 
-             <p class="fw-bold pt-2 bgourg" id="tag2"  >Education</p>
+             <p class="fw-semibold pb-1 mb-1 pt-2 bgourg" id="tag2"  >Education</p>
             <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
 
             <p class="font-gray  fw-bold" May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">Btech in Computer_science</p>
 
 
             <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
-            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">Btech in Computer_science</p>
         </div>
            <!-- 3rd  -->
 
            <div class="container">
-            <p class="fw-bold pt-2 bgourg " id="tag3"  >Internships</p>
+            <p class="fw-semibold pb-1 mb-1 pt-2 bgourg " id="tag3"  >Internships</p>
             <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
             
          </div> 
@@ -171,7 +189,7 @@ btn5.addEventListener('click' , function (){
 
          <!-- projects -->
          <div class="container">
-         <p class="fw-bold pt-2 bgourg " id="tag4">Projects</p>
+         <p class="fw-semibold pb-1 mb-1 pt-2 bgourg " id="tag4">Projects</p>
          <li>MERN STACK APP</li>
          <li>C++ MANAGEMNET SYSTEM</li>
          <li>HEALTCARE SYSTEM</li>
@@ -179,13 +197,13 @@ btn5.addEventListener('click' , function (){
 
         <!-- achievement -->
         <div class="container">
-            <p class="fw-bold bgourg pt-2" id="tag5">Achievments</p>
+            <p class="fw-semibold pb-1 mb-1 bgourg pt-2" id="tag5">Achievments</p>
             <li>Hackathon winner 2021</li>
             <li>Endeavour Host</li>
             <li>hult prize</li>
            </div> 
            <div class="container">
-            <p class="fw-bold pt-2 bgourg" id="tag6" >Skills</p>
+            <p class="fw-semibold pb-1 mb-1 pt-2 bgourg" id="tag6" >Skills</p>
             <li>HTML</li>
             <li>CSS</li>
             <li>JS</li>
@@ -195,6 +213,7 @@ btn5.addEventListener('click' , function (){
    
     </div>
     <div id="print-btn"></div>
+    
 
 </div>
 
