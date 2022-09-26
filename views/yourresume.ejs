@@ -130,22 +130,22 @@ btn5.addEventListener('click' , function (){
                 <img src="https://imgs.search.brave.com/qSsYOmcAFTOMv_Ee0tWdno16hKOkuIFSus10rQ8HzpI/rs:fit:860:857:1/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yMi0y/MjQwMDBfcHJvZmls/ZS1waWMtZHVtbXkt/cG5nLXRyYW5zcGFy/ZW50LXBuZy5wbmc" class="profimg  "/>
        <!-- <div class="html12__page-break"></div> -->
             </div>
-            <% for (let i  of user_res) {%>  
+           
             <div class="col-6">
                 <!-- <p class="pt-2rem text-centers fs-2 fw-bold"></p> -->
 
                
-          <p class="pt-2rem text-centers fs-2 fw-bold">  <%= i.name %></p>
+          <p class="pt-2rem text-centers fs-2 fw-bold">  <%= user_resume.name %></p>
      
-            </div> <%} %>
-            <% for (let  i of user_res){%>  
+            </div> 
+          
             <div class="container ">
                 <p class="fw-bold pt-2 bgourg" id="tag1" >About me</p>
 <!-- yaha data base se aega  -->
-                <p class="text-justify"><%= i.about %></p>
+                <p class="text-justify"><%= user_resume.about %></p>
                 
              </div>
-             <%}%> 
+            
              <div class="container">
                 <!-- <p class="fw-bold pt-2 bgour" >Education</p> -->
                 <p class="fw-bold pt-2 bgourg" id="tag1" >About me</p>
