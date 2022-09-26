@@ -22,14 +22,18 @@
         <input type="button" class="bg-blue border-0"  id="btn3" value="">
         <input type="button" class="bg-green border-0"  id="btn4" value="">
         <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
-        <input type="button" class="bg-blueviolet border-0"  id="btn7" value="">
+        <!-- <input type="button" class="bg-blueviolet border-0"  id="btn7" value=""> -->
 
     </div>
 <div class="" style="display: flex;
 justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
 </div>
-<div class="d-flex justify-content-center py-2">
-<button class="btn btn-primary  justify-content-right" id="download">Download PDF File</button>
+<div class="d-flex justify-content-center py-2" style="gap: 1rem;">
+<button class="btn btn-primary  justify-content-right" id="download" >Download PDF File</button>
+<a href="#formid">
+<button class="btn btn-primary   justify-content-right"  id="">Edit</button>
+</a>
+
 </div>
 
 </script>
@@ -41,7 +45,7 @@ justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
 
     
 
-    let color=['red', 'orange' , 'blue' , 'green','blueviolet' , 'black'];
+    let color=['red', 'orange' , 'blue' , 'green','blueviolet' ];
 let btn1=document.getElementById('btn');
 //for red
 btn1.addEventListener('click' , function (){
@@ -137,14 +141,6 @@ btn7.addEventListener('click' , function (){
 
 // pdf js ends here ----------------------------------------------------------------------------------------------------------------------
         </script>
-
-   
-
-
-   
-    
-   
-
   <div class="letter-spacingour">
     <div class=" hscreen bg-gray  "  >
     <div class="  font-poppins"  >
@@ -221,16 +217,33 @@ btn7.addEventListener('click' , function (){
     </div>
     <div id="print-btn"></div>
     
+    <div class="" id="formid" style="padding-top: 2rem;">
+        <h2 class="text-center pt-2 cursive fw-bold  "  >Edit your entries</h2>
+        <p class="text-center">Note for now only name and email entries are editable !</p>
+        <div class="d-flex justify-content-center container  fontclr card  " style="
+        
+        letter-spacing: 0.04rem;
+        width: 40%;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    padding-top: 2rem;
 
+        ">
+        
+        <form action="/users/update/<%=user_res.id %>" method="POST">
+          <input type="text" class="form-control my-1"  name="name" value="<%= user_res.name %>">
+          <input type="email" class="form-control  my-1"  name="email" value="<%= user_res.email %>">
+         <input type="submit" class="form-control my-1" value="Edit">
+      </form>
+      </div>
+      </div>
 </div>
 
 
   </div>
-  <form action="/users/update/<%=user_res.id %>" method="POST">
-    <input type="text"  name="name" value="<%= user_res.name %>">
-    <input type="email"  name="email" value="<%= user_res.email %>">
-   <input type="submit" value="Edit">
-</form>
+
+
 
 </body>
 </html>
