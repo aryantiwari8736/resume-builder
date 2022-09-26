@@ -2,7 +2,7 @@ const express =require('express');
 const env = require('./config/enviornment');
 const cookieParser = require('cookie-parser')
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 var flash = require('connect-flash');
 
