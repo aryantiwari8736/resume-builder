@@ -1,7 +1,6 @@
-This is full stack resume maker made my TEAM ----> DevSAP 
-step 1-npm install 
-step 2-npm start
-note:
-sometimes when page does not shows response the please again open the by npm start.
+This is full stack resume builder app 
+we used Node js for backend ,Database - MongoDb Atlas  
+If you want to use then follow given instructions 
+step -1 npm install 
+stem -2 npm start 
 
-we used local storage for database . 
