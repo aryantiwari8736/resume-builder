@@ -1,5 +1,5 @@
 const express =require('express');
-const env = require('./config/enviornment');
+
 const cookieParser = require('cookie-parser')
 const app = express();
 const port = process.env.PORT || 8000;
@@ -20,10 +20,8 @@ const MongoStore = require('connect-mongo');
 app.use(express.urlencoded()); 
 //using cookie -- 
 app.use(cookieParser());
-app.use(express.static(env.asset_path));
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
+app.use(express.static('./assets'));
+
 app.use(flash());
 
 //setup the view engine --
@@ -35,14 +33,13 @@ app.set('views','./views');
 app.use(session ({
 
     name:"Ineuron",
-
-    secret:env.session_cookie, //encode decode key 
+    secret:"blahsomething", //encode decode key 
     saveUninitialized:false,
     resave:false,
     cookie:{maxAge:(1000*60*10)},  //time how long our cookie remain valid // session time  in milisecond
     store:new MongoStore({
         
-            mongoUrl:'mongodb://localhost:27017',
+            mongoUrl:'mongodb+srv://aryantiwari:sanu1234@cluster0.0qa2gqs.mongodb.net/?retryWrites=true&w=majority',
             autoRemove:'disabled' 
         
     },function(err){
